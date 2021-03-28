@@ -21,8 +21,6 @@ request.onsuccess = function(event) {
   }
 };
 
-
-
 request.onerror = function(event) {
   console.log("Woops! " + event.target.errorCode);
 };
@@ -37,9 +35,6 @@ function saveRecord(record) {
   // add record to your store with add method.
   store.add(record);
 }
-
-
-
 
 function checkDatabase() {
   // open a transaction on your pending db
@@ -73,8 +68,6 @@ function checkDatabase() {
     }
   };
 }
-
-
 
 // listen for app coming back online
 window.addEventListener("online", checkDatabase);
