@@ -3,7 +3,7 @@
 <p align="center">
 
 
-  <h3 align="center">Note Taker</h3>
+  <h1 align="center">Budget Taker</h1>
 
   <p align="center">
     <a href="https://github.com/mygithub23/budget-tracker"><strong>Explore the docs »</strong></a>
