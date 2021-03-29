@@ -8,10 +8,6 @@ request.onupgradeneeded = function(event) {
   db.createObjectStore("pending", { autoIncrement: true });
 };
 
-
-
-
-
 request.onsuccess = function(event) {
   db = event.target.result;
 
@@ -21,8 +17,10 @@ request.onsuccess = function(event) {
   }
 };
 
+
+
 request.onerror = function(event) {
-  console.log("Woops! " + event.target.errorCode);
+  console.log("Error: " + event.target.errorCode);
 };
 
 function saveRecord(record) {
@@ -35,6 +33,9 @@ function saveRecord(record) {
   // add record to your store with add method.
   store.add(record);
 }
+
+
+
 
 function checkDatabase() {
   // open a transaction on your pending db
@@ -56,18 +57,17 @@ function checkDatabase() {
       })
       .then(response => response.json())
       .then(() => {
-        // if successful, open a transaction on your pending db
+       
         const transaction = db.transaction(["pending"], "readwrite");
-
-        // access your pending object store
+      
         const store = transaction.objectStore("pending");
-
-        // clear all items in your store
+        
         store.clear();
       });
     }
   };
 }
+
 
 // listen for app coming back online
 window.addEventListener("online", checkDatabase);
