@@ -57,7 +57,7 @@
     <img src="./assets/img/budget.gif">
   </div>
   <div>
-    <img src="./assets/img/offline2.jpg">
+    <img src="./assets/img/offline2.png">
 </div>
 
 ### ✨Demo
