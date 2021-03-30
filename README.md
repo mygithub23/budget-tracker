@@ -6,12 +6,27 @@
   <h1 align="center">Budget Taker</h1>
 
   <p align="center">
-    <a href="https://github.com/mygithub23/budget-tracker"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/mygithub23/budget-tracker"><strong>Explore the projcet on github »</strong></a>
     <br />
     <br />
 
   </p>
 </p>
+
+## Heroku
+
+<div>
+    <img src="./assets/img/Heroku-budget-.gif">
+  </div>
+     <br />
+    <br />
+
+## Github
+
+<div>
+    <img src="./assets/img/budget.gif">
+    
+  </div>
 
 <!-- TABLE OF CONTENTS -->
 <details open="open">
@@ -55,6 +70,7 @@
   </p>
   <div>
     <img src="./assets/img/budget.gif">
+    Heroku-budget-
   </div>
   <div>
     <img src="./assets/img/offline2.png">
